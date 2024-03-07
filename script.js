@@ -16,3 +16,11 @@ const questions = [
         answer: 2
     }
 ]
+
+function displayQuestion() {
+
+}
+
+function checkAnswer() {
+
+}
