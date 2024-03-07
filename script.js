@@ -17,10 +17,26 @@ const questions = [
     }
 ]
 
+let currentQuestion = 0;
+let correctAnswers = 0;
+
 function displayQuestion() {
+    const questionTxt = document.getElementById('the-questions');
+    questionTxt.textContent=questions[currentQuestion].question;
+
+    const options = document.querySelectorAll(".option");
+    options.forEach((option, index) => {
+        option.textContent = questions[currentQuestion].options[index];
+    });
+
+
+
+
 
 }
 
 function checkAnswer() {
 
 }
+
+displayQuestion();
