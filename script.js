@@ -17,9 +17,11 @@ const questions = [
     }
 ]
 
+//variables to start questions and answers
 let currentQuestion = 0;
 let correctAnswers = 0;
 
+//function to display the questions
 function displayQuestion() {
     const questionTxt = document.getElementById('the-questions');
     questionTxt.textContent=questions[currentQuestion].question;
@@ -28,15 +30,20 @@ function displayQuestion() {
     options.forEach((option, index) => {
         option.textContent = questions[currentQuestion].options[index];
     });
-
-
-
-
-
 }
 
-function checkAnswer() {
+//function to check the answer and display prompt
+function checkAnswer(select) {
+    const result = document.getElementById("result");
+    if (select === questions[currentQuestion].answer) {
+        result.textContent = alert("correct");
+        correctAnswers++;
+            }
+    else {
+        result.textContent = alert("incorrect");
+    }
 
 }
 
 displayQuestion();
+checkAnswer();
