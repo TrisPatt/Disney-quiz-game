@@ -38,9 +38,16 @@ function checkAnswer(checked) {
     let answer = questions[currentQuestion].answer;
     if (checked === answer) {
         alert("correct!");
+        correctAnswers+1;
             }
     else {
         alert("incorrect");
     }
+    currentQuestion++;
+        if (currentQuestion < questions.length) {
+            displayQuestion();
+        } else {
+            alert("The End");
+        }
 }
 displayQuestion();
