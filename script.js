@@ -43,7 +43,17 @@ function checkAnswer(select) {
         result.textContent = alert("incorrect");
     }
 
+    setTimeout(() => {
+        currentQuestion++;
+    
+    if (currentQuestion < questions.length) {
+        displayQuestion();}
+        else {
+            const gameArea = document.querySelector(".game-area");
+            game-gameArea.innerHTML = <p>you got
+            ${correctAnswers} out of ${questions.length}questions.</p>
+        }
+    });
 }
 
 displayQuestion();
-checkAnswer();
