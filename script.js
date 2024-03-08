@@ -38,11 +38,16 @@ function checkAnswer(checked) {
     let answer = questions[currentQuestion].answer;
     if (checked === answer) {
         alert("correct!");
-        correctAnswers+1;
+        correctAnswers++;
             }
     else {
         alert("incorrect");
     }
+    //to update the score
+    let score = document.getElementById("correctAnswers");
+    score.textContent = correctAnswers;
+
+    //to move to the next question
     currentQuestion++;
         if (currentQuestion < questions.length) {
             displayQuestion();
