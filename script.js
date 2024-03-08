@@ -1,20 +1,22 @@
 //create array of objects for questions
 const questions = [
     {
-        question: "what is 2+2",
+        question: "what is 2+2 ?",
         options: ["2", "3", "4", "5"],
         answer: 2
     },
     {
-        question: "what is 1+4",
+        question: "what is 1+4 ?",
         options: ["2","7","8","5"],
         answer: 3
     },
     {
-        question: "what is 5x5",
+        question: "what is 5x5 ?",
         options: ["20","25","30","40"],
         answer: 1
-    }];
+    }
+  
+];
 
 //variables to start questions and answers
 let currentQuestion = 0;
@@ -31,7 +33,6 @@ function displayQuestion() {
     });
 
 }
-
 
 //function to check the answer and display result
 function checkAnswer(checked) {
@@ -52,7 +53,12 @@ function checkAnswer(checked) {
         if (currentQuestion < questions.length) {
             displayQuestion();
         } else {
-            alert("The End");
+            alert("End of the quiz. You scored " + correctAnswers);
+            //reset 
+            currentQuestion = 0;
+            correctAnswers = 0;
+            displayQuestion();
         }
+        
 }
 displayQuestion();
