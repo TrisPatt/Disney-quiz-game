@@ -1,10 +1,31 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+    margin: 0px;
+}
+
 #game-area {
     height: 600px;
+    max-width: 80%;
     width:700px;
+    padding: 15px;
     background-color: pink;
     box-shadow: 5px 5px grey;
+    border-radius: 10px;
     display: grid;
     justify-content: center;
+    align-items: center;
 
 }
 #button {
@@ -12,7 +33,16 @@
     width:150px;
     height:50px;
     box-shadow: 2px 2px grey;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 0px;
+}
+
+h1 {  
+    font-family: "Princess Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+             
 }
