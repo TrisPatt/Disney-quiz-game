@@ -37,11 +37,17 @@ function displayQuestion() {
 //function to check the answer and display result
 function checkAnswer(checked) {
     let answer = questions[currentQuestion].answer;
+    let wrongSound = new Audio ('Assets/sounds/incorrect.mp3');
+    let correctSound = new Audio ('Assets/sounds/correct.mp3');
+
     if (checked === answer) {
+        correctSound.play();
         alert("correct!");
         correctAnswers++;
+
             }
     else {
+        wrongSound.play();
         alert("incorrect");
     }
     //to update the score
