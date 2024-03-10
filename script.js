@@ -24,6 +24,12 @@ let correctAnswers = 0;
 
 //function to display the questions
 function displayQuestion() {
+    // Reset the answer classes from all buttons
+    document.querySelectorAll(".option").forEach(button => {
+        button.classList.remove("correct");
+        button.classList.remove("incorrect");
+    });
+
     const questionTxt = document.getElementById('the-questions');
     questionTxt.textContent = questions[currentQuestion].question;
 
