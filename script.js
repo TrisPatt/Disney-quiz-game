@@ -40,6 +40,19 @@ function displayQuestion() {
 
 }
 
+// Function to delay starting the next question
+function delayNextQuestion() {
+    setTimeout(function() {
+        currentQuestion++;
+        if (currentQuestion < questions.length) {
+            displayQuestion();
+        } else {
+            alert("End of the quiz. You scored " + correctAnswers);
+            
+        }
+    }, 2000);
+}
+
 //function to check the answer and display result
 function checkAnswer(checked) {
     let answer = questions[currentQuestion].answer;
@@ -63,18 +76,7 @@ function checkAnswer(checked) {
     score.textContent = correctAnswers;
 
     //to move to the next question
-    currentQuestion++;
-        if (currentQuestion < questions.length) {
-            displayQuestion();
-        } else {
-            alert("End of the quiz. You scored " + correctAnswers);
-            //reset 
-            currentQuestion = 0;
-            correctAnswers = 0;
-            displayQuestion();
+    delayNextQuestion();
         }
         
-}
-
-
 displayQuestion();
