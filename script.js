@@ -78,5 +78,12 @@ function checkAnswer(checked) {
     //to move to the next question
     delayNextQuestion();
         }
-        
+
+// Function to reset the quiz
+document.getElementById("reset").addEventListener("click", function() {
+    currentQuestion = 0;
+    correctAnswers = 0;
+    displayQuestion();
+  });
+            
 displayQuestion();
