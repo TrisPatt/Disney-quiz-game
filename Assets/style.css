@@ -46,3 +46,10 @@ h1 {
     font-style: normal;
              
 }
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}

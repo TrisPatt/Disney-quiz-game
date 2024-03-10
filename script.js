@@ -44,11 +44,13 @@ function checkAnswer(checked) {
         correctSound.play();
         alert("correct!");
         correctAnswers++;
-
-            }
+        document.querySelectorAll(".option")[answer].classList.add("correct");
+        
+        }
     else {
         wrongSound.play();
         alert("incorrect");
+        document.querySelectorAll(".option")[checked].classList.add("incorrect");
     }
     //to update the score
     let score = document.getElementById("correctAnswers");
