@@ -8,11 +8,11 @@
     
 </head>
 
-<body>
-
+<body id="background-image">
+    
     <Div id="game-area">
         <h1>Alana's Disney Quiz</h1>
-        <h2>Score: <span id="correctAnswers">0</span></h2>
+        <h2 id="score">Score: <span id="correctAnswers">0</span></h2>
         <Div class="question">
             <p id="the-questions"></p>
             <div class="options">
@@ -21,11 +21,13 @@
                 <button id="button" class="option" onclick="checkAnswer(2)"></button>
                 <button id="button" class="option" onclick="checkAnswer(3)"></button>
             </div>
-            <p id=""result></p>
-            <button id="reset">Reset</button>
+                <div id="result"></div>
+                <button id="reset" onclick="reset()">Reset</button>
+                
             
-                </Div>
+        </Div>
     </Div>
+    
 
     
     <script src="script.js"></script>

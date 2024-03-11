@@ -28,6 +28,7 @@ function displayQuestion() {
     document.querySelectorAll(".option").forEach(button => {
         button.classList.remove("correct");
         button.classList.remove("incorrect");
+        
     });
 
     const questionTxt = document.getElementById('the-questions');
@@ -50,7 +51,7 @@ function delayNextQuestion() {
             alert("End of the quiz. You scored " + correctAnswers);
             
         }
-    }, 2000);
+    }, 3000);
 }
 
 //function to check the answer and display result
@@ -60,15 +61,13 @@ function checkAnswer(checked) {
     let correctSound = new Audio ('Assets/sounds/correct.mp3');
 
     if (checked === answer) {
-        correctSound.play();
-        alert("correct!");
+        correctSound.play();        
         correctAnswers++;
         document.querySelectorAll(".option")[answer].classList.add("correct");
         
         }
     else {
         wrongSound.play();
-        alert("incorrect");
         document.querySelectorAll(".option")[checked].classList.add("incorrect");
     }
     //to update the score

@@ -18,14 +18,15 @@ body {
 #game-area {
     height: 600px;
     max-width: 80%;
-    width:700px;
-    padding: 15px;
-    background-color: pink;
-    box-shadow: 5px 5px grey;
-    border-radius: 10px;
+    width:500px;
+    padding: 25px;
+    border-radius: 30px;
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: rgba(252, 162, 216, .5);
+    text-align: center;
+    
 
 }
 #button {
@@ -34,7 +35,6 @@ body {
     height:50px;
     box-shadow: 2px 2px grey;
     border-radius: 10px;
-    display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px 0px;
@@ -44,6 +44,7 @@ h1 {
     font-family: "Princess Sofia", cursive;
     font-weight: 400;
     font-style: normal;
+    font-size: 50px;
              
 }
 .correct {
@@ -52,4 +53,38 @@ h1 {
 
 .incorrect {
     background-color: red;
+}
+#reset {
+    display: block;
+    margin: 0 auto;
+    background-color: orange;
+    cursor: pointer;
+    width:150px;
+    height:50px;
+    box-shadow: 2px 2px grey;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#background-image {
+    background: url("../Assets/images/disney-castle.webp") no-repeat center center/ contain;
+   
+}
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    
+}
+
+.question {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#score {
+    text-align: right;
 }
