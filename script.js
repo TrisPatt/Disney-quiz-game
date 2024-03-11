@@ -18,10 +18,15 @@ const questions = [
   
 ];
 
-//variables to start questions and answers
 let currentQuestion = 0;
 let correctAnswers = 0;
 
+//start game function
+function gameStart() {
+    currentQuestion = 0;
+    document.getElementById('correctAnswers').innerHTML= "0";
+    displayQuestion();
+}
 //function to display the questions
 function displayQuestion() {
     // Reset the answer classes from all buttons
@@ -31,10 +36,10 @@ function displayQuestion() {
         
     });
 
-    const questionTxt = document.getElementById('the-questions');
+    let questionTxt = document.getElementById('the-questions');
     questionTxt.textContent = questions[currentQuestion].question;
 
-    const options = document.querySelectorAll(".option");
+    let options = document.querySelectorAll(".option");
     options.forEach((option, index) => {
         option.textContent = questions[currentQuestion].options[index];
     });
@@ -48,8 +53,8 @@ function delayNextQuestion() {
         if (currentQuestion < questions.length) {
             displayQuestion();
         } else {
-            alert("End of the quiz. You scored " + correctAnswers);
-            
+            alert("End of the quiz. You scored " + correctAnswers);   
+            gameStart();
         }
     }, 3000);
 }
@@ -82,7 +87,7 @@ function checkAnswer(checked) {
 document.getElementById("reset").addEventListener("click", function() {
     currentQuestion = 0;
     correctAnswers = 0;
-    displayQuestion();
+    gameStart();
   });
             
-displayQuestion();
+gameStart();
