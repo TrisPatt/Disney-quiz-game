@@ -124,3 +124,80 @@ h1 {
     margin-bottom: 60px;
     text-align: justify !important;
 }
+/* media query for mobile*/
+@media screen and (max-width: 767px) {
+
+    #background-image {
+        background: none;
+    }
+    body {
+        padding: 5px;
+        margin: 4px;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    
+    #game-area {
+        height: 90vh;
+        max-width: 90%;
+        width: 90%;
+        padding: 20px;
+      }
+    
+    #button {
+        width: 150px;
+        height: 40px;
+        margin: 10px;
+      }
+    
+    h1 {
+        font-size: 30px;
+      }
+    
+    .options {
+        
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;          
+      }
+
+    .options button {
+        margin: 0 auto;
+    }
+    
+    #reset,
+    #start-game,
+    #restart {
+        width: 120px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 30px;
+      }
+    
+    #rules,
+    #end-game {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+      }
+    
+    #end {
+        margin-top: 30px;
+      }
+    
+    #pad {
+        margin-bottom: 30px;
+      }
+    
+}
+/* media query for mobile*/
+@media screen and (max-width: 1200px) {
+
+    #background-image {
+        background: none;
+    }
+    
+    
+    
+
+}
