@@ -59,7 +59,7 @@ h1 {
     background-color: rgb(255, 24, 24);
     color: white;
 }
-#reset, #start-game {
+#reset, #start-game, #restart {
     display: block;
     margin: 0 auto;
     background-color: orange;

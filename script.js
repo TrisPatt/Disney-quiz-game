@@ -119,10 +119,12 @@ function checkAnswer(checked) {
     document.getElementById("reset").addEventListener("click", restart())
 
  function endGame() {
+    let tada = new Audio ('Assets/sounds/tada-sound.mp3');
+    tada.play();
     document.getElementById('end-game').style.display = "block";
     let result = document.getElementById('result');
-    result.innerHTML = "you scored: " +correctAnswers + " out of " +questions.length;
-    document.getElementById('start-game').addEventListener(click, restart())
+    result.innerHTML = "you scored: " +correctAnswers + " out of  " +questions.length;
+    document.getElementById('start-game').addEventListener(click, restart);
   };
 
 function restart() {
