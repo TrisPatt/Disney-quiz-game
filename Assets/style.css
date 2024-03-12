@@ -100,12 +100,12 @@ h1 {
     font-size: 20px;
 }
 
-.rules {
-    /*display: none;*/
+#rules {
+    display: none;
     position:fixed;
     width: 500px; 
     height: 700px; 
-    background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+    background-color: rgba(0,0,0,0.9); /* Black background with some opacity */
     z-index: 2;
     justify-content: center;
     align-items: center;

@@ -45,10 +45,15 @@ const questions = [
 let currentQuestion = 0;
 let correctAnswers = 0;
 
-
+//rules
+function rules() {
+    document.getElementById('rules').style.display = "block";
+    document.getElementById('start-game').addEventListener(click, gameStart());
+}
 
 //start game function
 function gameStart() {
+    document.getElementById('rules').style.display = "none";
     currentQuestion = 0;
     document.getElementById('correctAnswers').innerHTML= "0";
     displayQuestion();
@@ -116,4 +121,4 @@ document.getElementById("reset").addEventListener("click", function() {
     gameStart();
   });
             
-gameStart();
+rules();
