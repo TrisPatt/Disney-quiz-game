@@ -51,11 +51,13 @@ h1 {
              
 }
 .correct {
-    background-color: green;
+    background-color: rgb(24, 228, 24);
+    color:white;
 }
 
 .incorrect {
-    background-color: red;
+    background-color: rgb(255, 24, 24);
+    color: white;
 }
 #reset {
     display: block;
@@ -87,6 +89,7 @@ h1 {
     margin-top: 20px;
     gap: 10px;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 #score {

@@ -6,15 +6,39 @@ const questions = [
         answer: 2
     },
     {
-        question: "what is 1+4 ?",
-        options: ["2","7","8","5"],
+        question: "Q. What Disney character arrives on a kite to see the banks family?",
+        options: ["Aurora","Cinderella","Belle","Mary Poppins"],
+        answer: 3
+    },
+    { 
+        question: "Q. What Disney princess lives under the sea and has a daddy called Trident?",
+        options: ["Moana","Ariel","Tiana","Jasmin"],
+        answer: 1
+    },
+    {
+        question: "Q. What Disney Princess went on a magical carpet ride with Aladin?",
+        options: ["Moana","Ariel","Tiana","Jasmin"],
+        answer: 3
+    },
+
+    {
+        question: "Q. What Disney character arrives on a kite to see the banks family?",
+        options: ["Aurora","Cinderella","Belle","Mary Poppins"],
         answer: 3
     },
     {
-        question: "what is 5x5 ?",
-        options: ["20","25","30","40"],
+        question: "Q. What Disney princess lives under the sea and has a daddy called Trident?",
+        options: ["Moana","Ariel","Tiana","Jasmin"],
+        answer: 1
+    },
+    {
+        question: "Q. Whatd has a daddy called Trident?",
+        options: ["Moana","Ariel","Tiana","Jasmin"],
         answer: 1
     }
+
+
+    
   
 ];
 
