@@ -1,8 +1,8 @@
 //create array of objects for questions
 const questions = [
     {
-        question: "what is 2+2 ?",
-        options: ["2", "3", "4", "5"],
+        question: " Q. What Disney princess with long magical blonde hair wears a purple dress?",
+        options: ["Cinderella", "Elsa", "Rapunzel", "Jazmin"],
         answer: 2
     },
     {
