@@ -100,7 +100,7 @@ h1 {
     font-size: 20px;
 }
 
-#rules {
+#rules, #end-game {
     display: none;
     position:fixed;
     width: 500px; 

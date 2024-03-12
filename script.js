@@ -54,6 +54,7 @@ function rules() {
 //start game function
 function gameStart() {
     document.getElementById('rules').style.display = "none";
+    document.getElementById('end-game').style.display = "none";
     currentQuestion = 0;
     document.getElementById('correctAnswers').innerHTML= "0";
     displayQuestion();
@@ -79,13 +80,13 @@ function displayQuestion() {
 
 // Function to delay starting the next question
 function delayNextQuestion() {
-    setTimeout(function() {
+    setTimeout (function() {
         currentQuestion++;
         if (currentQuestion < questions.length) {
             displayQuestion();
         } else {
-            alert("End of the quiz. You scored " + correctAnswers);   
-            gameStart();
+             
+            endGame();
         }
     }, 3000);
 }
@@ -115,10 +116,20 @@ function checkAnswer(checked) {
         }
 
 // Function to reset the quiz
-document.getElementById("reset").addEventListener("click", function() {
+    document.getElementById("reset").addEventListener("click", restart())
+
+ function endGame() {
+    document.getElementById('end-game').style.display = "block";
+    let result = document.getElementById('result');
+    result.innerHTML = "you scored: " +correctAnswers + " out of " +questions.length;
+    document.getElementById('start-game').addEventListener(click, restart())
+  };
+
+function restart() {
+    document.getElementById('end-game').style.display = "none";
     currentQuestion = 0;
     correctAnswers = 0;
     gameStart();
-  });
+    }
             
 rules();
