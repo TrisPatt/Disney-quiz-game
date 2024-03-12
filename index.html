@@ -11,12 +11,16 @@
 <body id="background-image">
     
    <div id="rules">
-    <h2>Welcome to Alana's Disney Quiz Game!</h2><br>
+    <h2 id="end">Welcome to Alana's Disney Quiz Game!</h2><br>
     <h3>Rules of the game</h3><br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquid delectus cum excepturi rerum sint nisi nulla. Accusantium omnis, rem sequi ad excepturi veritatis eaque tenetur suscipit. Eum, libero deserunt! Aut ad necessitatibus dignissimos odit, atque laborum fuga possimus veniam numquam debitis iusto maiores, reprehenderit voluptatum fugit quaerat autem veritatis.</p>
+    <p id="pad">Once the game has started a question will appear displaying 4 possible answers. 
+        Answer the question you think is correct. If your answer is correct then the button will 
+        turn green and a ding sound will chime. If the answer is wrong then it will turn red and the
+        buzzer will sound. Answer as many questions correctly as you can.</p><br>
+        <p>Click the start button to begin</p>
     <button id="start-game" onclick="gameStart()">Start!</button>
-   </div>
-    
+   
+  </div>  
         <Div id="game-area">
             <h1>Alana's Disney Quiz</h1>
             <h2 id="score">Score: <span id="correctAnswers">0</span></h2>
@@ -37,11 +41,15 @@
         </Div>
     
         <Div id="end-game">
-            <h2>End of the game!</h2><br>
-            <h2>Congratulations!</h2>
-            <p id="result"></p>
+        
+            <h2 id="end">End of the game!</h2><br>
+            <h2>Congratulations!</h2><br>
+            <p id="result"></p><br>
+            <p>To start again click the button below</p><br>
+
             <button id="restart" onclick="restart()">Start again</button>
-        </Div>
+        
+    </div>    
     
 
     

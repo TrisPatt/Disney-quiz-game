@@ -105,11 +105,22 @@ h1 {
     position:fixed;
     width: 500px; 
     height: 700px; 
-    background-color: rgba(0,0,0,0.9); /* Black background with some opacity */
+    background-color: rgba(0,0,0,0.9); 
     z-index: 2;
     justify-content: center;
     align-items: center;
     border-radius: 35px;
     color: white;
-    padding: 20px;
+    padding: 80px 55px;
+    text-align: center;
+    
+    }
+
+#end {
+    margin-top: 100px;
+}
+
+#pad {
+    margin-bottom: 60px;
+    text-align: justify !important;
 }

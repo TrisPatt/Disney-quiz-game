@@ -45,10 +45,11 @@ const questions = [
 let currentQuestion = 0;
 let correctAnswers = 0;
 
+
 //rules
 function rules() {
     document.getElementById('rules').style.display = "block";
-    document.getElementById('start-game').addEventListener(click, gameStart());
+    document.getElementById('start-game').addEventListener(click, gameStart);
 }
 
 //start game function
@@ -98,13 +99,15 @@ function checkAnswer(checked) {
     let correctSound = new Audio ('Assets/sounds/correct.mp3');
 
     if (checked === answer) {
-        correctSound.play();        
+        correctSound.play();  
+        correctSound.volume = 0.5;      
         correctAnswers++;
         document.querySelectorAll(".option")[answer].classList.add("correct");
         
         }
     else {
         wrongSound.play();
+        wrongSound.volume = 0.5;
         document.querySelectorAll(".option")[checked].classList.add("incorrect");
     }
     //to update the score
@@ -116,11 +119,12 @@ function checkAnswer(checked) {
         }
 
 // Function to reset the quiz
-    document.getElementById("reset").addEventListener("click", restart())
+    document.getElementById("reset").addEventListener("click", restart)
 
  function endGame() {
     let tada = new Audio ('Assets/sounds/tada-sound.mp3');
     tada.play();
+    tada.volume = 0.5;
     document.getElementById('end-game').style.display = "block";
     let result = document.getElementById('result');
     result.innerHTML = "you scored: " +correctAnswers + " out of  " +questions.length;
