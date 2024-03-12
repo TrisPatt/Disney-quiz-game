@@ -32,7 +32,7 @@ body {
     
 
 }
-#button {
+#button  {
     cursor: pointer;
     width:150px;
     height:50px;
@@ -59,7 +59,7 @@ h1 {
     background-color: rgb(255, 24, 24);
     color: white;
 }
-#reset {
+#reset, #start-game {
     display: block;
     margin: 0 auto;
     background-color: orange;
@@ -98,4 +98,18 @@ h1 {
 
 #the-questions {
     font-size: 20px;
+}
+
+.rules {
+    /*display: none;*/
+    position:fixed;
+    width: 500px; 
+    height: 700px; 
+    background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    color: white;
+    padding: 20px;
 }

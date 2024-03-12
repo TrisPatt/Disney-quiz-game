@@ -45,6 +45,8 @@ const questions = [
 let currentQuestion = 0;
 let correctAnswers = 0;
 
+
+
 //start game function
 function gameStart() {
     currentQuestion = 0;
