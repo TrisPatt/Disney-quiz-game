@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disney Quiz</title>
-    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+
+    <link rel="stylesheet" href="assets/style.css">
     
 </head>
 
 <body id="background-image">
     
    <div id="rules">
-    <h2 id="end">Welcome to Alana's Disney Quiz Game!</h2><br>
+    <h2 class="margin">Welcome to Alana's Disney Quiz Game!</h2><br>
     <h3>Rules of the game</h3><br>
     <p id="pad">Once the game has started a question will appear displaying 4 possible answers. 
         Answer the question you think is correct. If your answer is correct then the button will 
@@ -27,10 +31,10 @@
             <Div class="question">
                 <p id="the-questions"></p>
                 <div class="options">
-                    <button id="button" class="option" onclick="checkAnswer(0)"></button>
-                    <button id="button" class="option" onclick="checkAnswer(1)"></button>
-                    <button id="button" class="option" onclick="checkAnswer(2)"></button>
-                    <button id="button" class="option" onclick="checkAnswer(3)"></button>
+                    <button class="button option" onclick="checkAnswer(0)"></button>
+                    <button class="button option" onclick="checkAnswer(1)"></button>
+                    <button class="button option" onclick="checkAnswer(2)"></button>
+                    <button class="button option" onclick="checkAnswer(3)"></button>
                 </div>
 
                     
@@ -42,7 +46,7 @@
     
         <Div id="end-game">
         
-            <h2 id="end">End of the game!</h2><br>
+            <h2 id="margin">End of the game!</h2><br>
             <h2>Congratulations!</h2><br>
             <p id="result"></p><br>
             <p>To start again click the button below</p><br>

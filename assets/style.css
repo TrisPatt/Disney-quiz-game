@@ -32,7 +32,7 @@ body {
     
 
 }
-#button  {
+.button  {
     cursor: pointer;
     width:150px;
     height:50px;
@@ -71,10 +71,11 @@ h1 {
     border-radius: 10px;
     margin-top: 20px;
     color:white;
+    font-size: 20px;
 }
 
 #background-image {
-    background: url("../Assets/images/disney-castle.webp") no-repeat center center/ contain;
+    background: url("../assets/images/disney-castle.webp") no-repeat center center/ contain;
    
 }
 .options {
@@ -119,7 +120,7 @@ h1 {
     
     }
 
-#end {
+.margin {
     margin-top: 100px;
 }
 
@@ -151,7 +152,7 @@ h1 {
         ;
       }
     
-    #button {
+    .button {
         width: 200px;
         height: 60px;
         margin: 10px;
@@ -194,7 +195,7 @@ h1 {
         text-align: center;
       }
     
-    #end {
+    .margin {
         margin-top: 30px;
       }
     

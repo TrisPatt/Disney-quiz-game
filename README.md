@@ -24,7 +24,7 @@ The user clicks on the answer they think is correct.
 
 ### response
 
-Once the user selects their answer, the response is shown in two ways. A visual and audible reply tells the user if they are correct or not. Both the sound and colour are clear and obvious universal cues.
+Once the user selects their answer, the response is shown in two ways. A visual and audible reply tells the user if they are correct or not. Both the sound and colour are clear and obvious universal cues with accessibility in mind.
 - The correct answer shows a green background on the button and triggers a ding (correct) sound.
 - The incorrect answer shows a red background on the button and triggers a buzzer (incorrect) sound.
 
@@ -33,26 +33,28 @@ Once the user selects their answer, the response is shown in two ways. A visual 
 
 ### Correct Answers
 
-The number of correct answers given by the user are displayed on the page. This counts the number of correct answer given and resets when the game restarts.
+The number of correct answers given by the user are displayed on the page. This counts the number of correct answers given and resets to 0 when the game restarts.
 
-![The show](assests/images/screenshots/Screenshot-show.webp)
+![correct Answers](show image )
 
 ### Ending the game
 
-When the quiz is finished, the number of correct answers is displayed on the screen to give a response to the user.
+When the quiz is finished, the user is congratuated and the number of correct answers is displayed on the screen. The user has the option to restart the quiz by clicking the restart button.
 
 ## Features left to implement
 
-- counter- adding a timer to finish te game.
+- counter- adding a timer to finish the game.
+- Difficulty level in questions
+- randomising questions
 
 ## Design
 
 - color scheme/ childrens colors
 
-![colour pallette](assests/images/screenshots/Screenshot-colour.webp)
+![colour pallette](show image)
 
-- The font used for the logo and headings is Archivo black
-- The main font used is Montserratt
+- The font used for the main heading is Princess Sofia
+- The main font used is 
 - No wireframe software was used in the design. The design was scripted on pen and paper
 - UI/UX principles were taken into account during the design process and were the reason for design and colour scheme
 
@@ -69,7 +71,6 @@ When the quiz is finished, the number of correct answers is displayed on the scr
 - Github - Deployment and storage of files online
 - Google Fonts - To select and import fonts online
 - Am I responsive - To show a screenshot of the responsive design across multiple devices
-- Font Awesome - Provides relevant icons
 - Favicon - provides icons for the title bar
 
 ## Testing
