@@ -11,7 +11,7 @@ const questions = [
         answer: 3
     },
     { 
-        question: "Q. What Disney princess lives under the sea and has a daddy called Trident?",
+        question: "Q. What Disney princess lives under the sea and has a best friend called Flounder",
         options: ["Moana","Ariel","Tiana","Jasmin"],
         answer: 1
     },
@@ -20,26 +20,36 @@ const questions = [
         options: ["Moana","Ariel","Tiana","Jasmin"],
         answer: 3
     },
-
     {
-        question: "Q. What Disney character arrives on a kite to see the banks family?",
-        options: ["Aurora","Cinderella","Belle","Mary Poppins"],
+        question: "Q. Who is Mickey Mouses' dog",
+        options: ["pluto","Ariel","Donald","Goofey"],
+        answer: 0
+    },
+    {
+        question: "Q. Who defeats scar to become the Lion King",
+        options: ["Zazu","Sitch","Simba","Baloo"],
+        answer: 2
+    },
+    {
+        question: "Q. who sings wherever I will go?",
+        options: ["Moana","Ariel","Tiana","Jasmin"],
+        answer: 0
+    },
+    {
+        question: "Q. which Disney princess has powers to turn things into ice using her hands!",
+        options: ["Daisy","Ariel","Elsa","Olaf"],
+        answer: 2
+    },
+    {
+        question: "Q. which Disney character has huge ears and a feather which makes them fly?",
+        options: ["Dumbo","Simba","Bambi","Pinocchio"],
+        answer: 0
+    },
+    {
+        question: "Q. In which Disney film is 'The family madrigal sang?'",
+        options: ["Moana","Frozen  2","Wish","Encanto"],
         answer: 3
-    },
-    {
-        question: "Q. What Disney princess lives under the sea and has a daddy called Trident?",
-        options: ["Moana","Ariel","Tiana","Jasmin"],
-        answer: 1
-    },
-    {
-        question: "Q. Whatd has a daddy called Trident?",
-        options: ["Moana","Ariel","Tiana","Jasmin"],
-        answer: 1
     }
-
-
-    
-  
 ];
 
 let currentQuestion = 0;

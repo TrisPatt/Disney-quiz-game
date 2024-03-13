@@ -138,10 +138,14 @@ h1 {
       }
     
     #game-area {
-        height: 90vh;
-        max-width: 90%;
-        width: 90%;
+        height: 98vh;
+        max-width: 98%;
+        width: 98%;
         padding: 20px;
+        display: grid;
+        place-items: center;
+        align-content: center
+        ;
       }
     
     #button {
@@ -155,24 +159,28 @@ h1 {
       }
     
     .options {
-        
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;          
+        justify-content: center;   
+        place-items: center;     
+        margin: 0;  
       }
-
-    .options button {
-        margin: 0 auto;
+    #the-questions {
+        padding: 15px 0px;
     }
-    
+
+      
     #reset,
     #start-game,
     #restart {
+        display:grid;
+        place-items: center;
         width: 120px;
         height: 40px;
-        margin-top: 10px;
-        margin-left: 30px;
+                
       }
-    
+    .question {
+        text-align: center;
+    }
     #rules,
     #end-game {
         width: 90%;
