@@ -61,6 +61,7 @@ function enableButtons() {
     document.getElementById('button2').disabled = false;
     document.getElementById('button3').disabled = false;
     document.getElementById('button4').disabled = false;
+    document.getElementById('reset').disabled = false;
 };
 
 function disableButtons() {
@@ -68,6 +69,7 @@ function disableButtons() {
     document.getElementById('button2').disabled = true;
     document.getElementById('button3').disabled = true;
     document.getElementById('button4').disabled = true;
+    document.getElementById('reset').disabled = true;
 };
 
 //rules
