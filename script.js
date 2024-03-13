@@ -11,7 +11,7 @@ const questions = [
         answer: 3
     },
     { 
-        question: "Q. What Disney princess lives under the sea and has a best friend called Flounder",
+        question: "Q. What Disney princess lives under the sea and has a best friend called Flounder?",
         options: ["Moana","Ariel","Tiana","Jasmin"],
         answer: 1
     },
@@ -21,22 +21,22 @@ const questions = [
         answer: 3
     },
     {
-        question: "Q. Who is Mickey Mouses' dog",
-        options: ["pluto","Ariel","Donald","Goofey"],
+        question: "Q. Who is Mickey Mouses' dog?",
+        options: ["Pluto","Ariel","Donald","Goofey"],
         answer: 0
     },
     {
-        question: "Q. Who defeats scar to become the Lion King",
+        question: "Q. Who defeats scar to become the Lion King?",
         options: ["Zazu","Sitch","Simba","Baloo"],
         answer: 2
     },
     {
-        question: "Q. who sings wherever I will go?",
+        question: "Q. Who sings wherever I will go?",
         options: ["Moana","Ariel","Tiana","Jasmin"],
         answer: 0
     },
     {
-        question: "Q. which Disney princess has powers to turn things into ice using her hands!",
+        question: "Q. Which Disney princess has powers to turn things into ice using her hands!?",
         options: ["Daisy","Ariel","Elsa","Olaf"],
         answer: 2
     },
@@ -46,7 +46,7 @@ const questions = [
         answer: 0
     },
     {
-        question: "Q. In which Disney film is 'The family madrigal sang?'",
+        question: "Q. In which Disney film is 'The family madrigal' sang?'",
         options: ["Moana","Frozen  2","Wish","Encanto"],
         answer: 3
     }
@@ -54,7 +54,21 @@ const questions = [
 
 let currentQuestion = 0;
 let correctAnswers = 0;
+enableButtons();
 
+function enableButtons() {
+    document.getElementById('button1').disabled = false;
+    document.getElementById('button2').disabled = false;
+    document.getElementById('button3').disabled = false;
+    document.getElementById('button4').disabled = false;
+};
+
+function disableButtons() {
+    document.getElementById('button1').disabled = true;
+    document.getElementById('button2').disabled = true;
+    document.getElementById('button3').disabled = true;
+    document.getElementById('button4').disabled = true;
+};
 
 //rules
 function rules() {
@@ -76,7 +90,8 @@ function displayQuestion() {
     document.querySelectorAll(".option").forEach(button => {
         button.classList.remove("correct");
         button.classList.remove("incorrect");
-        
+        enableButtons();
+                
     });
 
     let questionTxt = document.getElementById('the-questions');
@@ -86,6 +101,7 @@ function displayQuestion() {
     options.forEach((option, index) => {
         option.textContent = questions[currentQuestion].options[index];
     });
+
 
 }
 
@@ -105,20 +121,23 @@ function delayNextQuestion() {
 //function to check the answer and display result
 function checkAnswer(checked) {
     let answer = questions[currentQuestion].answer;
-    let wrongSound = new Audio ('Assets/sounds/incorrect.mp3');
-    let correctSound = new Audio ('Assets/sounds/correct.mp3');
+    let wrongSound = new Audio ('assets/sounds/incorrect.mp3');
+    let correctSound = new Audio ('assets/sounds/correct.mp3');
 
     if (checked === answer) {
         correctSound.play();  
         correctSound.volume = 0.5;      
         correctAnswers++;
         document.querySelectorAll(".option")[answer].classList.add("correct");
-        
+        disableButtons();
+                        
         }
     else {
         wrongSound.play();
         wrongSound.volume = 0.5;
         document.querySelectorAll(".option")[checked].classList.add("incorrect");
+        disableButtons();
+        
     }
     //to update the score
     let score = document.getElementById("correctAnswers");
@@ -128,11 +147,13 @@ function checkAnswer(checked) {
     delayNextQuestion();
         }
 
+
+
 // Function to reset the quiz
     document.getElementById("reset").addEventListener("click", restart)
 
  function endGame() {
-    let tada = new Audio ('Assets/sounds/tada-sound.mp3');
+    let tada = new Audio ('assets/sounds/tada-sound.mp3');
     tada.play();
     tada.volume = 0.5;
     document.getElementById('end-game').style.display = "block";
