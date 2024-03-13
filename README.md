@@ -24,12 +24,12 @@ The user clicks on the answer they think is correct.
 
 ### response
 
-Once the user selects their answer, the response is shown in two ways. 
+Once the user selects their answer, the response is shown in two ways. A visual and audible reply tells the user if they are correct or not. Both the sound and colour are clear and obvious universal cues.
 - The correct answer shows a green background on the button and triggers a ding (correct) sound.
 - The incorrect answer shows a red background on the button and triggers a buzzer (incorrect) sound.
 
 
-![Response](assests/images/screenshots/Screenshot-about.webp)
+![Response](show image)
 
 ### Correct Answers
 
