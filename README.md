@@ -5,7 +5,7 @@ It is a quiz game based on Disney questions and has 4 possible answers.
 
 Please click the link to visit the page: [Alana's Disney quiz game]("https://trispatt.github.io/Disney-quiz-game/")
 
-![Screenshot overview](assets/images/readme images/overview.jpg)
+![Screenshot overview](assets/images/readme-images/overview.webp)
 
 ## Features
 
@@ -13,14 +13,14 @@ Please click the link to visit the page: [Alana's Disney quiz game]("https://tri
 
 At the start, the rules are displayed. This demonstrates how the game should be played. There is a field to enter a username followed by the start button. The user should enter a username and then click start as described in the rules. If no username is entered, then an alert appears to ask the user to enter a username. The game will not start if a username is not entered. 
 
-![The rules](show image)
+![The rules](assets/images/readme-images/rules.webp)
 
 ### The game
 
 Once the game has started a question is displayed in the question area and four buttons provide the possible answers, of which one is correct. 
 The user clicks on the answer they think is correct.
 
-![game-area](show image)
+![game-area](assets/images/readme-images/end-game.webp)
 
 ### response
 
@@ -31,19 +31,19 @@ Once the user selects their answer, the response is shown in two ways. A visual 
 Once an answer is selcted, there is a 3 second delay in order that the user can clearly see and hear the response. During this time, no other buttons can be pressed. 
 
 
-![Response](show image)
+![Response](assets/images/readme-images/response.webp)
 
 ### Correct Answers
 
 The number of correct answers given by the user are displayed on the page. This counts the number of correct answers given and resets to 0 when the game restarts.
 
-![correct Answers](show image )
+![correct Answers](assets/images/readme-images/score.webp)
 
 ### Ending the game
 
 When the quiz is finished, the user is presented with the result! Depending on the score, the user will either be congratulated, commiserated or told not bad, try again. The username entered at the start will be displayed followed by the score. A different sound effect is also played depending on the score. This greatly adds to the user experience because the result is very personal. 
 
-![End of the game](show image)
+![End of the game](assets/images/readme-images/end-game.webp)
 
 ## Features left to implement
 
@@ -103,7 +103,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 
 - The lighthouse report showed excellent accessibility scores across every page for mobile and desktop
   
-![Lighthouse report](show image)
+![Lighthouse report](assets/images/readme-images/lighthouse.webp)
 
 ### Bugs
 
