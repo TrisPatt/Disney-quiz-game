@@ -171,8 +171,8 @@ function checkAnswer(checked) {
 
  function endGame() {
     let tada = new Audio ('assets/sounds/tada-sound.mp3');
-    tada.play();
-    tada.volume = 0.5;
+    let wah = new Audio ('assets/sounds/wah-wah.mp3');
+    let applause = new Audio ('assets/sounds/small-applause.mp3');
     document.getElementById('end-game').style.display = "block";
 
     //response to the user depending on number of correct answers
@@ -180,13 +180,20 @@ function checkAnswer(checked) {
     let retrieveUserName = localStorage.getItem("userName");
 
     if (correctAnswers <= 4) {
+    wah.play();
+    wah.volume = 0.5;
     result.innerHTML = "Unlucky, " + retrieveUserName + " you scored: " + correctAnswers + " out of " + questions.length + ". Better luck next time!";
     }
      else if (correctAnswers >= 7) {
+    tada.play();
+    tada.volume = 0.5;
     result.innerHTML = "Congratulations, " + retrieveUserName + " you scored: " + correctAnswers + " out of " + questions.length + ". You are a star!";
     } 
      else {
-    result.innerHTML = "Not bad, " + retrieveUserName + " you scored: " + correctAnswers + " out of " + questions.length + ". Try again!";
+        applause.play();
+        applause.volume = 0.5;
+        result.innerHTML = "Not bad, " + retrieveUserName + " you scored: " + correctAnswers + " out of " + questions.length + ". Try again!";
+    
 }
 
 // Add event listener to the start-game button

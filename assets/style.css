@@ -17,10 +17,6 @@ body {
     margin: 0px;
 }
 
-#input {
-    
-}
-
 #game-area {
     height: 700px;
     max-width: 80%;
@@ -125,12 +121,16 @@ h1 {
     }
 
 .margin {
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 #pad {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     text-align: justify !important;
+}
+
+#input {
+    margin-top: 10px;
 }
 /* media query for mobile*/
 @media screen and (max-width: 767px) {
@@ -201,18 +201,7 @@ h1 {
       }
     
     #pad {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     
-}
-/* media query for mobile*/
-@media screen and (max-width: 1200px) {
-
-    #background-image {
-        background: none;
-    }
-    
-    
-    
-
 }
