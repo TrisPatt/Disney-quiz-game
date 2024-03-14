@@ -5,7 +5,7 @@ It is a quiz game based on Disney questions and has 4 possible answers.
 
 Please click the link to visit the page: [Alana's Disney quiz game]("https://trispatt.github.io/Disney-quiz-game/")
 
-![Screenshot overview](show image)
+![Screenshot overview](assets/images/readme images/overview.jpg)
 
 ## Features
 
@@ -109,8 +109,9 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 
 | Test | Expected result | Actual Result | Fix | pass/ fail |
 |------|-----------------|---------------|-----|------------|
-|Repeatedly click on the correct answer|Next question appears and updates the score by +1|The score increases by the number of times clicked|Add function to disable and enable buttons between questions|Pass|bug test|bugs|bugs|fixed|Pass|
-
+|Repeatedly click on the correct answer|Next question appears and updates the score by +1|The score increases by the number of times clicked|Add function to disable and enable buttons between questions|Pass|
+|Click an answer, then quickly click restart before next question is displayed|Next question is displayed|Next question gets replaced by a random question|Add to the function to disable/enable buttons until next question|Pass|
+|Enter no username at start and click start|Alert for username and remain on rules screen|Move to first question|Add function to validate entry and remove event listener which listened to click to start next question|Pass|
 
 ### Unfixed bug
 
