@@ -82,9 +82,11 @@ function rules() {
 function validate() {
     let userName = document.getElementById('input').value.trim();
     if (userName === "") {
-        alert('Please enter a username');
+        alert('Please enter a username!');
         rules();
     } else {
+        alert('Hello '+ userName)
+        localStorage.setItem('userName', userName);
         gameStart();
     }
 } 
@@ -173,7 +175,8 @@ function checkAnswer(checked) {
     tada.volume = 0.5;
     document.getElementById('end-game').style.display = "block";
     let result = document.getElementById('result');
-    result.innerHTML = "you scored: " +correctAnswers + " out of  " +questions.length;
+    let retrieveUserName = localStorage.getItem("userName");
+    result.innerHTML = retrieveUserName+ "you scored: " +correctAnswers + " out of  " +questions.length;
     document.getElementById('start-game').addEventListener('click', restart);
   }
 
