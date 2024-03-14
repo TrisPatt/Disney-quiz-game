@@ -13,16 +13,18 @@ Please click the link to visit the page: ![Alana's Disney quiz game]("https://tr
 
 At the start, the rules are displayed. This demonstrates how the game should be played. There is a field to enter a username followed by the start button. The user should enter a username and then click start as described in the rules. If no username is entered, then an alert appears to ask the user to enter a username. The game will not start if a username is not entered. 
 
+Once a username is selected, the alert confirms this by saying hello to the user with the name provided.
+
 ![The rules](assets/images/readme-images/rules.webp)
 
 ### The game
 
-Once the game has started a question is displayed in the question area and four buttons provide the possible answers, of which one is correct. 
+Once the game has started, a question is displayed in the question area and four buttons provide the possible answers, of which one is correct. 
 The user clicks on the answer they think is correct.
 
-![game-area](assets/images/readme-images/end-game.webp)
+![game-area](assets/images/readme-images/game-area.webp)
 
-### response
+### Response
 
 Once the user selects their answer, the response is shown in two ways. A visual and audible reply tells the user if they are correct or not. Both the sound and colour are clear and obvious universal cues with accessibility in mind.
 - The correct answer shows a green background on the button and triggers a ding (correct) sound.
@@ -43,7 +45,7 @@ The number of correct answers given by the user are displayed on the page. This 
 
 When the quiz is finished, the user is presented with the result! Depending on the score, the user will either be congratulated, commiserated or told not bad, try again. The username entered at the start will be displayed followed by the score. A different sound effect is also played depending on the score. This greatly adds to the user experience because the result is very personal. 
 
-![End of the game](assets/images/readme-images/end-game.webp)
+![End of the game](assets/images/readme-images/score1.jpg)
 
 ## Features left to implement
 
