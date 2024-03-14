@@ -27,6 +27,7 @@ The user clicks on the answer they think is correct.
 Once the user selects their answer, the response is shown in two ways. A visual and audible reply tells the user if they are correct or not. Both the sound and colour are clear and obvious universal cues with accessibility in mind.
 - The correct answer shows a green background on the button and triggers a ding (correct) sound.
 - The incorrect answer shows a red background on the button and triggers a buzzer (incorrect) sound.
+
 Once an answer is selcted, there is a 3 second delay in order that the user can clearly see and hear the response. During this time, no other buttons can be pressed. 
 
 
@@ -108,7 +109,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 
 | Test | Expected result | Actual Result | Fix | pass/ fail |
 |------|-----------------|---------------|-----|------------|
-|repeatedly click on the correct answer|Next question appears and updates the score by +1|The score increases the number of times clicked|Add function to disable and enable buttons between questions|Pass|
+|Repeatedly click on the correct answer|Next question appears and updates the score by +1|The score increases by the number of times clicked|Add function to disable and enable buttons between questions|Pass|bug test|bugs|bugs|fixed|Pass|
 
 
 ### Unfixed bug
