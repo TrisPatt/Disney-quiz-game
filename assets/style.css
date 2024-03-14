@@ -17,6 +17,10 @@ body {
     margin: 0px;
 }
 
+#input {
+    
+}
+
 #game-area {
     height: 700px;
     max-width: 80%;
@@ -75,7 +79,7 @@ h1 {
 }
 
 #background-image {
-    background: url("../assets/images/disney-castle.webp") no-repeat center center/ contain;
+    background-image: linear-gradient(rgb(100, 216, 255), rgb(245, 178, 188));
    
 }
 .options {
@@ -131,9 +135,6 @@ h1 {
 /* media query for mobile*/
 @media screen and (max-width: 767px) {
 
-    #background-image {
-        background: none;
-    }
     body {
         padding: 5px;
         margin: 4px;

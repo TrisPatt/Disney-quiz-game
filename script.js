@@ -62,7 +62,7 @@ function enableButtons() {
     document.getElementById('button3').disabled = false;
     document.getElementById('button4').disabled = false;
     document.getElementById('reset').disabled = false;
-};
+}
 
 function disableButtons() {
     document.getElementById('button1').disabled = true;
@@ -70,13 +70,24 @@ function disableButtons() {
     document.getElementById('button3').disabled = true;
     document.getElementById('button4').disabled = true;
     document.getElementById('reset').disabled = true;
-};
+}
 
 //rules
 function rules() {
     document.getElementById('rules').style.display = "block";
-    document.getElementById('start-game').addEventListener(click, gameStart);
+    document.getElementById('start-game');
 }
+
+//*validate form
+function validate() {
+    let userName = document.getElementById('input').value.trim();
+    if (userName === "") {
+        alert('Please enter a username');
+        rules();
+    } else {
+        gameStart();
+    }
+} 
 
 //start game function
 function gameStart() {
@@ -102,6 +113,8 @@ function displayQuestion() {
     let options = document.querySelectorAll(".option");
     options.forEach((option, index) => {
         option.textContent = questions[currentQuestion].options[index];
+        
+        
     });
 
 
@@ -152,7 +165,7 @@ function checkAnswer(checked) {
 
 
 // Function to reset the quiz
-    document.getElementById("reset").addEventListener("click", restart)
+    document.getElementById("reset").addEventListener("click", restart);
 
  function endGame() {
     let tada = new Audio ('assets/sounds/tada-sound.mp3');
@@ -161,8 +174,8 @@ function checkAnswer(checked) {
     document.getElementById('end-game').style.display = "block";
     let result = document.getElementById('result');
     result.innerHTML = "you scored: " +correctAnswers + " out of  " +questions.length;
-    document.getElementById('start-game').addEventListener(click, restart);
-  };
+    document.getElementById('start-game').addEventListener('click', restart);
+  }
 
 function restart() {
     document.getElementById('end-game').style.display = "none";

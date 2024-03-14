@@ -75,38 +75,35 @@ When the quiz is finished, the user is congratuated and the number of correct an
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator services were used to validate every page of the project to ensure there were no errors.
+The W3C Markup Validator, W3C CSS Validator and JSHint services were used to validate every page of the project to ensure there were no errors.
 
 [WC3 Markup validator](https://validator.w3.org/)
 [w3c CSS validator](https://jigsaw.w3.org/css-validator/)
+[JSHint](https://jshint.com/)
+
 
 ### Validation Results
 
-- HTML- No errors were returned from all pages
+- HTML- No errors were returned 
 - CSS- No errors returned
+- JSHint- suggested that there was one unused variable, checkAnswer. This is because the function is called on click represented in the HTML. No errors returned. 
 
 ### Manual Testing
 
 - The website was tested on Chrome, Edge, Firefox and Safari
 - Each page was tested on a Macbook pro and Surface pro 7 laptop, ipad mini, iphone XR and Honer 70 android mobile
-- All links on every page were tested and work correctly
-- Dev tools was used to test various screemn sizes
-git 
+- Dev tools was used to test various screen sizes
+
 
 ### Lighthouse Report
 
 - The lighthouse report showed excellent accessibility scores across every page for mobile and desktop
   
-![Lighthouse report](assests/images/screenshots/desktop-home-lighthouse.webp)
+![Lighthouse report](show image)
 
 ### Bugs
 
-- Bug- The background colour would not show over the images to highlight the overlay text on the upcoming gigs section <br>
-  Fix- I fixed this by wrapping another div around the text element and applying the background colour to the text rather than the div for the images
-- Bug - The images of the band in the contact section were showing outside the screen on some screen sizes<br>
-  Fix- I added the selectors to the relevant media queries and changed the size of the images so that they would show up in a row on different screen sizes
-- Bug - On testing, the lighthouse report showed a bad load time for the main LCP on the home page <br>
-  Fix - I made the fetch priority high on the index.HTML head to preload the image. This created a faster performance time
+
 
 ### Unfixed bug
 
@@ -116,12 +113,12 @@ git
 
 GitHub Pages was used to deploy live versions of the website.
 
-1. Log in to GitHub and locate [GitHub Repository Riff Raff Band](https://trispatt.github.io/Riff-Raff-Band/index.html)
+1. Log in to GitHub and locate [GitHub Repository Alana's Disney quiz game](https://github.com/TrisPatt/Disney-quiz-game)
 2. At the top of the Repository(not the main navigation) locate "Settings" button on the menu.
 3. Scroll down the Settings page until you locate "GitHub Pages".
 4. Under "Source", click the dropdown menu "None" and select "Main" and click "Save".
 5. The page will automatically refresh.
-6. Scroll back to locate the now-published site [link](https://trispatt.github.io/Riff-Raff-Band/index.html) in the "GitHub Pages" section.
+6. Scroll back to locate the now-published site [link](https://trispatt.github.io/Disney-quiz-game/) in the "GitHub Pages" section.
 
 
 
