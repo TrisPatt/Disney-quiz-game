@@ -186,7 +186,7 @@ function checkAnswer(checked) {
      else if (correctAnswers >= 7) {
     tada.play();
     tada.volume = 0.5;
-    result.innerHTML = "Congratulations, " + retrieveUserName + " you scored: " + correctAnswers + " out of " + questions.length + ". You are a star!";
+    result.innerHTML = "Congratulations, " + retrieveUserName + ". You are ready to be a Disney Princess/Prince. You scored: " + correctAnswers + " out of " + questions.length + ". You are a star!";
     } 
      else {
         applause.play();

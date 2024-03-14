@@ -11,7 +11,7 @@ Please click the link to visit the page: [Alana's Disney quiz game]("https://tri
 
 ### The Rules
 
-At the start, the rules are displayed. This demonstrates how the game should be played and includes a start button.
+At the start, the rules are displayed. This demonstrates how the game should be played. There is a field to enter a username followed by the start button. The user should enter a username and then click start as described in the rules. If no username is entered, then an alert appears to ask the user to enter a username. The game will not start if a username is not entered. 
 
 ![The rules](show image)
 
@@ -27,6 +27,7 @@ The user clicks on the answer they think is correct.
 Once the user selects their answer, the response is shown in two ways. A visual and audible reply tells the user if they are correct or not. Both the sound and colour are clear and obvious universal cues with accessibility in mind.
 - The correct answer shows a green background on the button and triggers a ding (correct) sound.
 - The incorrect answer shows a red background on the button and triggers a buzzer (incorrect) sound.
+Once an answer is selcted, there is a 3 second delay in order that the user can clearly see and hear the response. During this time, no other buttons can be pressed. 
 
 
 ![Response](show image)
@@ -39,7 +40,9 @@ The number of correct answers given by the user are displayed on the page. This 
 
 ### Ending the game
 
-When the quiz is finished, the user is congratuated and the number of correct answers is displayed on the screen. The user has the option to restart the quiz by clicking the restart button.
+When the quiz is finished, the user is presented with the result! Depending on the score, the user will either be congratulated, commiserated or told not bad, try again. The username entered at the start will be displayed followed by the score. A different sound effect is also played depending on the score. This greatly adds to the user experience because the result is very personal. 
+
+![End of the game](show image)
 
 ## Features left to implement
 
@@ -54,7 +57,7 @@ When the quiz is finished, the user is congratuated and the number of correct an
 ![colour pallette](show image)
 
 - The font used for the main heading is Princess Sofia
-- The main font used is 
+- The main fonts used are Arial, Helvetica, sans-serif
 - No wireframe software was used in the design. The design was scripted on pen and paper
 - UI/UX principles were taken into account during the design process and were the reason for design and colour scheme
 
@@ -103,6 +106,9 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 
 ### Bugs
 
+| Test | Expected result | Actual Result | Fix | pass/ fail |
+|------|-----------------|---------------|-----|------------|
+|repeatedly click on the correct answer|Next question appears and updates the score by +1|The score increases the number of times clicked|Add function to disable and enable buttons between questions|Pass|
 
 
 ### Unfixed bug
