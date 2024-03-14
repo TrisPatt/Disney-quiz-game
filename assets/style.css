@@ -28,7 +28,7 @@ body {
     align-items: center;
     background-color: rgba(252, 162, 216, .5);
     text-align: center;
-    box-shadow: 5px;
+    box-shadow: 5px 5px 5px 5px grey;
     
 
 }
