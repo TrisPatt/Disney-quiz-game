@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Disney quiz princess game">
+    <meta name="keywords" content="Disney Princess quiz game">"
     <title>Disney Quiz</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
@@ -23,6 +25,7 @@
         buzzer will sound. Answer as many questions correctly as you can.</p><br>
         <p>Enter your name below and the click the start button to begin</p>
     
+    <label for="input">Username:</label>
     <input type="text" id="input" name="name">
     <button id="start-game" onclick="validate()">Start!</button>
     
@@ -34,10 +37,10 @@
             <Div class="question">
                 <p id="the-questions"></p>
                 <div class="options">
-                    <button disabled id="button1" class="button option" onclick="checkAnswer(0)"></button>
-                    <button disabled id="button2" class="button option" onclick="checkAnswer(1)"></button>
-                    <button disabled id="button3" class="button option" onclick="checkAnswer(2)"></button>
-                    <button disabled id="button4" class="button option" onclick="checkAnswer(3)"></button>
+                    <button aria-label="option1" disabled id="button1" class="button option" onclick="checkAnswer(0)"></button>
+                    <button aria-label="option2" disabled id="button2" class="button option" onclick="checkAnswer(1)"></button>
+                    <button aria-label="option3" disabled id="button3" class="button option" onclick="checkAnswer(2)"></button>
+                    <button aria-label="option4" disabled id="button4" class="button option" onclick="checkAnswer(3)"></button>
                 </div>
 
                     

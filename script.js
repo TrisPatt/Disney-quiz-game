@@ -31,7 +31,7 @@ const questions = [
         answer: 2
     },
     {
-        question: "Q. Who sings wherever I will go?",
+        question: "Q. Who sings 'wherever I will go?'",
         options: ["Moana","Ariel","Tiana","Jasmin"],
         answer: 0
     },
@@ -41,7 +41,7 @@ const questions = [
         answer: 2
     },
     {
-        question: "Q. which Disney character has huge ears and a feather which makes them fly?",
+        question: "Q. Which Disney character has huge ears and a feather which makes them fly?",
         options: ["Dumbo","Simba","Bambi","Pinocchio"],
         answer: 0
     },
@@ -115,9 +115,8 @@ function displayQuestion() {
     let options = document.querySelectorAll(".option");
     options.forEach((option, index) => {
         option.textContent = questions[currentQuestion].options[index];
-        
-        
-    });
+                
+        });
 
 
 }
