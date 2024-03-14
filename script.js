@@ -174,10 +174,23 @@ function checkAnswer(checked) {
     tada.play();
     tada.volume = 0.5;
     document.getElementById('end-game').style.display = "block";
+
+    //response to the user depending on number of correct answers
     let result = document.getElementById('result');
     let retrieveUserName = localStorage.getItem("userName");
-    result.innerHTML = retrieveUserName+ "you scored: " +correctAnswers + " out of  " +questions.length;
-    document.getElementById('start-game').addEventListener('click', restart);
+
+    if (correctAnswers <= 4) {
+    result.innerHTML = "Unlucky, " + retrieveUserName + " you scored: " + correctAnswers + " out of " + questions.length + ". Better luck next time!";
+    }
+     else if (correctAnswers >= 7) {
+    result.innerHTML = "Congratulations, " + retrieveUserName + " you scored: " + correctAnswers + " out of " + questions.length + ". You are a star!";
+    } 
+     else {
+    result.innerHTML = "Not bad, " + retrieveUserName + " you scored: " + correctAnswers + " out of " + questions.length + ". Try again!";
+}
+
+// Add event listener to the start-game button
+document.getElementById('start-game').addEventListener('click', restart);
   }
 
 function restart() {
