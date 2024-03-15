@@ -3,7 +3,7 @@
 This game was originally developed for my daughter who is a fan of Disney. However, the questions are generic. Therefore, the target audience is any young child who is a Disney fan and can read or be helped along the way.
 It is a quiz game based on Disney questions and has 4 possible answers. 
 
-Please click the link to visit the page: ![Alana's Disney quiz game](https://trispatt.github.io/Disney-quiz-game/)
+Please click the link to visit the page: [link](https://trispatt.github.io/Disney-quiz-game/)
 
 ![Screenshot overview](assets/images/readme-images/overview.webp)
 
