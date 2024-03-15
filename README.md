@@ -30,7 +30,7 @@ Once the user selects their answer, the response is shown in two ways. A visual 
 - The correct answer shows a green background on the button and triggers a ding (correct) sound.
 - The incorrect answer shows a red background on the button and triggers a buzzer (incorrect) sound.
 
-Once an answer is selcted, there is a 3 second delay in order that the user can clearly see and hear the response. During this time, no other buttons can be pressed. 
+Once an answer is selected, there is a 3 second delay in order that the user can clearly see and hear the response. During this time, no other buttons can be pressed. 
 
 
 ![Response](assets/images/readme-images/response.webp)
@@ -39,7 +39,7 @@ Once an answer is selcted, there is a 3 second delay in order that the user can 
 
 The number of correct answers given by the user are displayed on the page. This counts the number of correct answers given by the user.
 
-The game can be restarted at any time by clicking on the Restart button. This will also rest the number of correct scores to 0.
+The game can be restarted at any time by clicking on the Restart button. This will also reset the number of correct scores to 0.
 
 ![correct Answers](assets/images/readme-images/score.webp)
 
@@ -54,6 +54,7 @@ When the quiz is finished, the user is presented with the result! Depending on t
 - counter- adding a timer to finish the game.
 - Difficulty level in questions
 - randomising questions
+- Different Disney themes eg. Disney Villains
 
 ## Design
 
@@ -65,7 +66,8 @@ When the quiz is finished, the user is presented with the result! Depending on t
 - The main general fonts used are Arial, Helvetica, sans-serif
 - No wireframe software was used in the design. The design was scripted on pen and paper
 - UI/UX principles were taken into account during the design process and were the reason for design and colour scheme and theme.
-- The main colours used in the design are childrens colours, pink and blue. The main backround is a gradient of the two colours. 
+- The main colours used in the design are childrens colours, pink and blue. The main background is a gradient of the two colours. 
+- The game is responsive and works well on different device sizes
 
 ## Technologies used
 

@@ -117,7 +117,7 @@ function displayQuestion() {
     options.forEach((option, index) => {
         option.textContent = questions[currentQuestion].options[index];
                 
-        });
+    });
 
 
 }
