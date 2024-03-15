@@ -3,7 +3,7 @@
 This game was originally developed for my daughter who is a fan of Disney. However, the questions are generic. Therefore, the target audience is any young child who is a Disney fan and can read or be helped along the way.
 It is a quiz game based on Disney questions and has 4 possible answers. 
 
-Please click the link to visit the page: ![Alana's Disney quiz game]("https://trispatt.github.io/Disney-quiz-game/")
+Please click the link to visit the page: ![Alana's Disney quiz game](https://trispatt.github.io/Disney-quiz-game/)
 
 ![Screenshot overview](assets/images/readme-images/overview.webp)
 
@@ -118,7 +118,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 |Click an answer, then quickly click restart before next question is displayed|Next question is displayed|Next question gets replaced by a random question|Add to the function to disable/enable buttons until next question|Pass|
 |Enter no username at start and click start|Alert for username and remain on rules screen|Move to first question|Add function to validate entry and remove event listener which listened to click to start next question|Pass|
 
-### Unfixed bugz
+### Unfixed bugs
 
 - No outstanding unfixed bugs
 
