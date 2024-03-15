@@ -51,7 +51,7 @@ const questions = [
         answer: 3
     }
 ];
-
+//Variables for questions and answers. Enables buttons at start
 let currentQuestion = 0;
 let correctAnswers = 0;
 enableButtons();
@@ -63,7 +63,7 @@ function enableButtons() {
     document.getElementById('button4').disabled = false;
     document.getElementById('reset').disabled = false;
 }
-
+//function to disable buttons when required so user cannot click the answer multiple times between questions
 function disableButtons() {
     document.getElementById('button1').disabled = true;
     document.getElementById('button2').disabled = true;
@@ -72,21 +72,22 @@ function disableButtons() {
     document.getElementById('reset').disabled = true;
 }
 
-//rules
+//display rueles of the game at start
 function rules() {
     document.getElementById('rules').style.display = "block";
     document.getElementById('start-game');
 }
 
-//*validate form
+//*validate user input for username on start screen
 function validate() {
     let userName = document.getElementById('input').value.trim();
     if (userName === "") {
         alert('Please enter a username!');
         rules();
     } else {
-        alert('Hello '+ userName)
+        alert('Hello '+ userName);
         localStorage.setItem('userName', userName);
+        //after correct validation, move to start the game
         gameStart();
     }
 } 
@@ -101,7 +102,7 @@ function gameStart() {
 }
 //function to display the questions
 function displayQuestion() {
-    // Reset the answer classes from all buttons
+    // Resets the answer classes on all buttons to show default colour
     document.querySelectorAll(".option").forEach(button => {
         button.classList.remove("correct");
         button.classList.remove("incorrect");
@@ -131,7 +132,7 @@ function delayNextQuestion() {
              
             endGame();
         }
-    }, 3000);
+    }, 3000); //3 second delay between questions
 }
 
 //function to check the answer and display result
@@ -165,10 +166,11 @@ function checkAnswer(checked) {
 
 
 
-// Function to reset the quiz
+// Reset the quiz
     document.getElementById("reset").addEventListener("click", restart);
 
- function endGame() {
+//Function to end the quiz  
+function endGame() {
     let tada = new Audio ('assets/sounds/tada-sound.mp3');
     let wah = new Audio ('assets/sounds/wah-wah.mp3');
     let applause = new Audio ('assets/sounds/small-applause.mp3');
@@ -195,15 +197,17 @@ function checkAnswer(checked) {
     
 }
 
-// Add event listener to the start-game button
+// Add event listener to the start-game button to restart game
 document.getElementById('start-game').addEventListener('click', restart);
   }
 
+//function to restart game
 function restart() {
     document.getElementById('end-game').style.display = "none";
     currentQuestion = 0;
     correctAnswers = 0;
     gameStart();
     }
-            
+
+// calls the rules function to start
 rules();

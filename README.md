@@ -96,7 +96,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 
 - HTML- No errors were returned 
 - CSS- No errors returned
-- JSHint- suggested that there was one unused variable, checkAnswer. This is because the function is called on click represented in the HTML. No errors returned. 
+- JSHint- suggested that there were two unused variables, checkAnswer and validate. This is because both are called on click from the HTML elements. No errors returned. 
 
 ### Manual Testing
 

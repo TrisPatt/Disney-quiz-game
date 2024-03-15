@@ -16,47 +16,53 @@
 </head>
 
 <body id="background-image">
-    
-   <div id="rules">
-    <h2 class="margin">Welcome to Alana's Disney Quiz Game!</h2><br>
-    <h3>Rules of the game</h3><br>
-    <p id="pad">Once the game has started a question will appear displaying 4 possible answers. 
+    <!--Rules at start-->
+    <div id="rules">
+        <h2 class="margin">Welcome to Alana's Disney Quiz Game!</h2><br>
+        <h3>Rules of the game</h3><br>
+        <p id="pad">Once the game has started a question will appear displaying 4 possible answers. 
         Answer the question you think is correct. If your answer is correct then the button will 
         turn green and a ding sound will chime. If the answer is wrong then it will turn red and the
         buzzer will sound. Answer as many questions correctly as you can.</p><br>
         <p>Enter your name below and the click the start button to begin</p>
     
-    <label for="input">Username:</label>
-    <input type="text" id="input" name="name">
-    <button id="start-game" onclick="validate()">Start!</button>
-    
-   
-  </div>  
-        <Div id="game-area">
-            <h1>Alana's Disney Quiz</h1>
-            <h2 id="score">Score: <span id="correctAnswers">0</span></h2>
-            <Div class="question">
-                <p id="the-questions"></p>
-                <div class="options">
-                    <button aria-label="option1" disabled id="button1" class="button option" onclick="checkAnswer(0)"></button>
-                    <button aria-label="option2" disabled id="button2" class="button option" onclick="checkAnswer(1)"></button>
-                    <button aria-label="option3" disabled id="button3" class="button option" onclick="checkAnswer(2)"></button>
-                    <button aria-label="option4" disabled id="button4" class="button option" onclick="checkAnswer(3)"></button>
-                </div>
+        <!--Username input-->
+        <label for="input">Username:</label>
+        <input type="text" id="input" name="name">
 
-                    <button disabled id="reset" onclick="gameStart()">Restart</button>      
-                
-                                   
-            </Div>
+        <!--Start game button. Calls the validate function-->
+        <button id="start-game" onclick="validate()">Start!</button>
+    </div> 
+
+    <!--Main game area with questions and answer buttons-->
+    <Div id="game-area">
+        <h1>Alana's Disney Quiz</h1>
+        <h2 id="score">Score: <span id="correctAnswers">0</span></h2>
+
+        <Div class="question">
+            <p id="the-questions"></p>
+
+            <div class="options">
+                <button aria-label="option1" disabled id="button1" class="button option" onclick="checkAnswer(0)"></button>
+                <button aria-label="option2" disabled id="button2" class="button option" onclick="checkAnswer(1)"></button>
+                <button aria-label="option3" disabled id="button3" class="button option" onclick="checkAnswer(2)"></button>
+                <button aria-label="option4" disabled id="button4" class="button option" onclick="checkAnswer(3)"></button>
+            </div>
+            
+            <!--Restart button. Calls the gameStart function-->
+            <button disabled id="reset" onclick="gameStart()">Restart</button>                     
         </Div>
+    </Div>
     
-        <Div id="end-game">
+    <!--End of the game-->
+    <Div id="end-game">
         
-            <h2 id="margin">End of the game!</h2><br>
-            <p id="result"></p><br>
-            <p>To start again click the button below</p><br>
+        <h2 id="margin">End of the game!</h2><br>
+        <p id="result"></p><br>
+        <p>To start again click the button below</p><br>
 
-            <button id="restart" onclick="restart()">Start again</button>
+        <!--Restart over. Calls the restert function-->
+        <button id="restart" onclick="restart()">Start again</button>
         
     </div>    
     
