@@ -106,7 +106,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 
 ### Lighthouse Report
 
-- The lighthouse report showed exemplary accessibility scores for mobile and desktop
+- The lighthouse report showed exemplary scores for all, on mobile and desktop
   
 ![Lighthouse report](assets/images/readme-images/lighthouse.webp)
 
