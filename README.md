@@ -1,6 +1,6 @@
 # Alana's Disney quiz game
 
-This game was originally developed for my daughter who is a fan of Disney. However, the questions are generic. Therefore, the target audience is any young child who is a Disney fan and can read.
+This game was originally developed for my daughter who is a fan of Disney. However, the questions are generic. Therefore, the target audience is any young child who is a Disney fan and can read or be helped along the way.
 It is a quiz game based on Disney questions and has 4 possible answers. 
 
 Please click the link to visit the page: ![Alana's Disney quiz game]("https://trispatt.github.io/Disney-quiz-game/")
@@ -37,7 +37,9 @@ Once an answer is selcted, there is a 3 second delay in order that the user can 
 
 ### Correct Answers
 
-The number of correct answers given by the user are displayed on the page. This counts the number of correct answers given and resets to 0 when the game restarts.
+The number of correct answers given by the user are displayed on the page. This counts the number of correct answers given by the user.
+
+The game can be restarted at any time by clicking on the Restart button. This will also rest the number of correct scores to 0.
 
 ![correct Answers](assets/images/readme-images/score.webp)
 
@@ -57,12 +59,13 @@ When the quiz is finished, the user is presented with the result! Depending on t
 
 - color scheme/ childrens colors
 
-![colour pallette](show image)
+![colour pallette](assets/images/readme-images/colours.webp)
 
 - The font used for the main heading is Princess Sofia
-- The main fonts used are Arial, Helvetica, sans-serif
+- The main general fonts used are Arial, Helvetica, sans-serif
 - No wireframe software was used in the design. The design was scripted on pen and paper
-- UI/UX principles were taken into account during the design process and were the reason for design and colour scheme
+- UI/UX principles were taken into account during the design process and were the reason for design and colour scheme and theme.
+- The main colours used in the design are childrens colours, pink and blue. The main backround is a gradient of the two colours. 
 
 ## Technologies used
 
@@ -78,6 +81,7 @@ When the quiz is finished, the user is presented with the result! Depending on t
 - Google Fonts - To select and import fonts online
 - Am I responsive - To show a screenshot of the responsive design across multiple devices
 - Favicon - provides icons for the title bar
+- pixabay - Provides sound clips
 
 ## Testing
 
@@ -97,13 +101,12 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 ### Manual Testing
 
 - The website was tested on Chrome, Edge, Firefox and Safari
-- Each page was tested on a Macbook pro and Surface pro 7 laptop, ipad mini, iphone XR and Honer 70 android mobile
+- This was tested on an Apple Macbook pro and Windows surface pro 7 laptop, ipad mini, iphone XR, Honer 70 and Huawei p30 pro
 - Dev tools was used to test various screen sizes
-
 
 ### Lighthouse Report
 
-- The lighthouse report showed excellent accessibility scores across every page for mobile and desktop
+- The lighthouse report showed exemplary accessibility scores for mobile and desktop
   
 ![Lighthouse report](assets/images/readme-images/lighthouse.webp)
 
@@ -115,7 +118,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint services were used to val
 |Click an answer, then quickly click restart before next question is displayed|Next question is displayed|Next question gets replaced by a random question|Add to the function to disable/enable buttons until next question|Pass|
 |Enter no username at start and click start|Alert for username and remain on rules screen|Move to first question|Add function to validate entry and remove event listener which listened to click to start next question|Pass|
 
-### Unfixed bug
+### Unfixed bugz
 
 - No outstanding unfixed bugs
 
@@ -149,11 +152,12 @@ By forking the repository, we make a copy of the original repository on our GitH
 7. Press Enter and your local clone will be created.
 
 ## Credits
+- Disney is a registered trademark. 
 
 ### Content
-
-- 
+- All content is written by the developer.
   
 ### Code
-
 - Readme template supplied by the code institute
+- overlap code referenced at w3 schools
+- local storage researched at mdn webdocs
